@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+
+    <title>
+    </title>
+    <link rel="stylesheet" href="{% static "css/demo.css"%}"> 
+
+  </head>
+  <body>
+  	<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+<div align="center">	
+<form  method="POST">
+  {%csrf_token%}
+  {{form.as_p}}
+<button type="submit" class="btn btn-default" name="button">Submit</button>
+</form>
+</div>
+</div>
+    
+    
+
+    
+  </body>
+</html>
+
+
+  
